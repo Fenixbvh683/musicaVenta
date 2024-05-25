@@ -28,7 +28,7 @@
     flex-wrap: nowrap;
     align-items: center;
     text-decoration: none;
-   
+
 }
 
 .encabezado-home-logo{
@@ -58,8 +58,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
 .encabezado-section-ul{
     display: flex;
     justify-content: space-between;
@@ -84,8 +82,6 @@
     color: chartreuse;
     font-size: 25px;
     font-family: 'Arial Black', Helvetica, sans-serif;
-    
-   
         
 }
 
@@ -116,6 +112,8 @@
     font-size: 25px;
     
 }
+
+
 
 .footer-home{
     width: 100%;
