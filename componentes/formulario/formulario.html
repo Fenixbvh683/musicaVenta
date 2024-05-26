@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/disco2.ico">
+    <link rel="icon" href="../../img/disco2.ico">
     <script src="https://kit.fontawesome.com/73dba2e5fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../formulario/formulario.css">
     <title>Formulario de Contacto</title>
@@ -13,13 +13,13 @@
     <header class="header-home">
 
         <div class="encabezado">
+            
             <div class="encabezado-home-logo">
-                <img src="#" alt="">
-                <h1>logo</h1>
+                <a href="../../index.html"><img src="../../img/logo.jpg" alt=""></a>
             </div>
             
             <section class="encabezado-home-section">
-                <h1>Casa de musica lo que elijan</h1>
+                <h1>VibraVerso</h1>
                 <h2>El mejor lugar para comprar musica en todos los formato</h2>
                 <hr>
                 <div>
@@ -45,17 +45,65 @@
     </header>
     
     <main>
-        <section>
-            <div>
-                <img src="#" alt="imagen de la">
-            </div>
+        
+        <form class="main-form" action="post">
+
+            <fieldset class="main-form-fieldset">
+
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion">
+
+                <label for="fecha_nac">Fecha de Nacimiento</label>
+                <input type="date" name="fecha_nac" id="fecha_nac">
+
+            </fieldset>
+
+            
+            <h2>Seleccione Interes
+            <input type="radio"> Comprador
+            <input type="radio"> Vendedor</h2>
+
+            <h2>Generos
+            <input type="checkbox"> Rock
+            <input type="checkbox"> Cumbia
+            <input type="checkbox"> Metal
+            <input type="checkbox"> Folklore
+            <input type="checkbox"> Pistas
+            <input type="checkbox"> Creaciones Personale
+            <input type="checkbox"> Demos
+            <input type="checkbox"> Reggeton
+            <input type="checkbox"> Latina</h2>
+
+            <h2>Seleccione Forma de pago o Cobro
+            <select name="pago_cobro" id="pago_cobro">
+                <option value="">Efectivo</option>
+                <option value="">Transferencia</option>
+                <option value="">Tarjeta de Credito</option>
+                <option value="">Tarjeta de Debito</option>
+                <option value="">Mercado Pago</option>
+            </select></h2>
+
+            <label for="comentario">Comentario relevante
+            <textarea name="comentario" rows="30" cols="10" id="comentario" placeholder="Escribe tu consulta"></textarea></label>
 
             <div>
-                <h1>mensaje</h1>
-                <h2>de bienvenida</h2>
-                <h3>aca</h3>
+                <button>Enviar</button>
+                <button>Limpiar</button>
             </div>
-        </section>
+            
+
+        </form>
 
     </main>
     <footer class="footer-home">

@@ -35,8 +35,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    position: relative;
     
 }
+
+.encabezado-home-logo img{
+    width: 150px;
+    border-radius: 250px;
+    filter:drop-shadow(0px 7px 21px #ff0000);
+    animation: rotar 20s linear infinite;
+}
+
+@keyframes rotar{
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+      }
+      50% {
+          -webkit-transform: rotateY(-360deg);
+                  transform: rotateY(-360deg);
+        }
+      100% {
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+      }
+    }
+
 
 .encabezado-home-section{
     display: flex;
@@ -65,9 +90,6 @@
     padding: 10px;
     align-items: center;
     gap: 50px;
-    
-    
-    
 }
 
 .encabezado-section-ul-li{
@@ -113,7 +135,82 @@
     
 }
 
+.encabezado-home-nav-ul li a:hover{
+    font-size: 50px;
+    color: aqua;
+}
 
+.main-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1200px;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.main-section-article1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-section-article2{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section-article1-div1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-color: chartreuse;
+    border-width: 10px;
+    border-style: inset;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+        
+}
+
+.main-section-article1-div2{
+    width: 300px;
+    height: 300px;
+    border-color: rgb(89, 0, 255);
+    border-width: 10px;
+    border-style: inset;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+
+.main-section-article1-div3{
+    width: 300px;
+    height: 300px;
+    border-color: rgb(255, 0, 85);
+    border-width: 10px;
+    border-style: inset;
+    position: absolute;
+    left: 150px;
+    top: 330px;
+    
+}
+
+
+.main-section-article2-div1 img{
+    width: 700px;
+    opacity: 10%;
+    filter: brightness(150%);
+}
+
+.main-section-article2 marquee{
+    position: absolute;
+    color: aqua;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .footer-home{
     width: 100%;
@@ -125,6 +222,7 @@
     margin: auto;
     padding: 25px;
     color: blue;
+    
 }
 
 .footer-home-section div{
@@ -132,4 +230,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer-home-section div p{
+    font-size: 25px;
 }

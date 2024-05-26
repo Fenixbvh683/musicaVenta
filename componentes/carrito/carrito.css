@@ -35,8 +35,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 20px;
+    position: relative;
 }
+
+.encabezado-home-logo img{
+    width: 150px;
+    border-radius: 250px;
+    filter:drop-shadow(0px 7px 21px #ff0000);
+    animation: rotar 20s linear infinite;
+}
+
+@keyframes rotar{
+    0% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+      }
+      50% {
+          -webkit-transform: rotateY(-360deg);
+                  transform: rotateY(-360deg);
+        }
+      100% {
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+      }
+    }
 
 .encabezado-home-section{
     display: flex;
@@ -114,6 +137,11 @@
     color: chartreuse;
     font-size: 25px;
     
+}
+
+.encabezado-home-nav-ul li a:hover{
+    font-size: 50px;
+    color: aqua;
 }
 
 .footer-home{
