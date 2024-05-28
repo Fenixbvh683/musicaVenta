@@ -44,68 +44,82 @@
 
     </header>
     
-    <main>
+    <main class="main_formulario">
+
+        <h1 class="main_formulario_titulo">Formulario de Contacto Comprador o Vendedor</h1>
         
-        <form class="main-form" action="post">
+        <form class="main_formulario_contenido" action="https://formspree.io/f/xpzvenjg" method="POST">
 
-            <fieldset class="main-form-fieldset">
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="nombre">Nombre</label>
+                <input class="main_formulario_contenido_input" placeholder="   Escriba su NOMBRE" required type="text" name="nombre" id="nombre">
+            </div>
+                
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="apellido">Apellido</label>
+                <input class="main_formulario_contenido_input" placeholder="   Escriba su APELLIDO" type="text" name="apellido" id="apellido">
+            </div>
+                
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="email">E-mail</label>
+                <input class="main_formulario_contenido_input" placeholder="   Escriba su EMAIL" type="email" name="email" id="email">
+            </div>
 
-                <legend>Datos Personales</legend>
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="fecha_nac">Fecha de Nacimiento</label>
+                <input class="main_formulario_contenido_input" type="date" name="fecha_nac" id="fecha_nac">
+            </div>
 
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
+            <div class="main_formulario_contenido_div2">
+                <label class="main_formulario_contenido_label" for="direccion">Direccion</label>
+                <input class="main_formulario_contenido_input" placeholder="   Escriba su DIRECCION" type="text" name="direccion" id="direccion">
+            </div>
 
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="pago_cobro"> Forma de Pago o Cobro</label>
+                <select class="main_formulario_contenido_input" name="pago_cobro" id="pago_cobro">
+                    <option value="" disabled selected></option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Transferencia">Transferencia</option>
+                    <option value="Tarjeta de Credito">Tarjeta de Credito</option>
+                    <option value="Tarjeta de Debito">Tarjeta de Debito</option>
+                    <option value="Mercado Pago">Mercado Pago</option>
+                </select>
+            </div>
 
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-
-                <label for="direccion">Direccion</label>
-                <input type="text" name="direccion" id="direccion">
-
-                <label for="fecha_nac">Fecha de Nacimiento</label>
-                <input type="date" name="fecha_nac" id="fecha_nac">
-
-            </fieldset>
-
-            
-            <h2>Seleccione Interes
-            <input type="radio"> Comprador
-            <input type="radio"> Vendedor</h2>
-
-            <h2>Generos
-            <input type="checkbox"> Rock
-            <input type="checkbox"> Cumbia
-            <input type="checkbox"> Metal
-            <input type="checkbox"> Folklore
-            <input type="checkbox"> Pistas
-            <input type="checkbox"> Creaciones Personale
-            <input type="checkbox"> Demos
-            <input type="checkbox"> Reggeton
-            <input type="checkbox"> Latina</h2>
-
-            <h2>Seleccione Forma de pago o Cobro
-            <select name="pago_cobro" id="pago_cobro">
-                <option value="">Efectivo</option>
-                <option value="">Transferencia</option>
-                <option value="">Tarjeta de Credito</option>
-                <option value="">Tarjeta de Debito</option>
-                <option value="">Mercado Pago</option>
-            </select></h2>
-
-            <label for="comentario">Comentario relevante
-            <textarea name="comentario" rows="30" cols="10" id="comentario" placeholder="Escribe tu consulta"></textarea></label>
-
-            <div>
-                <button>Enviar</button>
-                <button>Limpiar</button>
+            <div class="main_formulario_contenido_div">
+                <h2 class="main_formulario_contenido_label" name="cliente" id="">Seleccione Interes</h2>
+                <input type="radio" name="cliente" value="comprador"> <p class="main_formulario_contenido_p">Comprador</p>
+                <input type="radio" name="cliente" value="vendedor"> <p class="main_formulario_contenido_p">Vendedor</p>
             </div>
             
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="genero">Generos</label>
+                <input type="checkbox" name="genero" value="Rock"><p class="main_formulario_contenido_p">Rock</p>
+                <input type="checkbox" name="genero" value="Cumbia"><p class="main_formulario_contenido_p">Cumbia</p>
+                <input type="checkbox" name="genero" value="Metal"> <p class="main_formulario_contenido_p">Metal</p>
+                <input type="checkbox" name="genero" value="Floklore"> <p class="main_formulario_contenido_p">Folklore</p>
+                <input type="checkbox" name="genero" value="Pistas"> <p class="main_formulario_contenido_p">Pistas</p>
+                <input type="checkbox" name="genero" value="Creaciones Personales"> <p class="main_formulario_contenido_p">Creaciones Personales</p>
+                <input type="checkbox" name="genero" value="Demos"> <p class="main_formulario_contenido_p">Demos</p>
+                <input type="checkbox" name="genero" value="Reggeton"> <p class="main_formulario_contenido_p">Reggeton</p>
+                <input type="checkbox" name="genero" value="Latina"> <p class="main_formulario_contenido_p">Latina</p>
+            </div>
+            
+            <div class="main_formulario_contenido_div">
+                <label class="main_formulario_contenido_label" for="comentario">Comentario relevante</label>
+                <textarea class="main_formulario_contenido_textarea" name="comentario" rows="3" cols="3" id="comentario" placeholder="  Escribe tu consulta"></textarea>
+            </div>
 
+            <div class="main_formulario_contenido_boton">
+                <input class="main_formulario_contenido_boton_enviar" type="submit" value="Enviar...">
+                <input class="main_formulario_contenido_boton_limpiar" type="reset" value="Limpiar...">
+            </div>
+                        
         </form>
-
+        
     </main>
+    
     <footer class="footer-home">
         <section class="footer-home-section">
             <div>
@@ -133,5 +147,6 @@
         
         <marquee behavior="" direction="">Grupo nombres año @Copiring</marquee>
     </footer>
+    
 </body>
 </html>

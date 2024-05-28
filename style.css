@@ -75,7 +75,7 @@
 .encabezado-home-section h1{
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 5px 5px 5px beige;
+    text-shadow: 5px 5px 5px #ff8800;
     border: #0d0e0e;
 }
 

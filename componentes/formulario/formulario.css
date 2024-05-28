@@ -74,7 +74,7 @@
 .encabezado-home-section h1{
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 5px 5px 5px beige;
+    text-shadow: 5px 5px 5px #ff8800;
     border: #0d0e0e;
 }
 
@@ -145,16 +145,138 @@
     color: aqua;
 }
 
-.main-form{
-    display: flex;
-    flex-direction: column;
+.main_formulario{
+    width: 850px;
+    margin-top: 50px;
+    background-color: transparent;
+    box-shadow: 5px 5px #888888;
+    border-radius: 15px;
+    
 }
 
-.main-form-fieldset{
+.main_formulario_titulo{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: #ff8800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.main_formulario_contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    margin: auto;
+}
+
+.main_formulario_contenido_div{
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    padding: 15px;
-    margin-top: 50px;
+    width: 400px;
+    padding: 25px;
+}
+
+.main_formulario_contenido_div2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 800px;
+    padding: 25px;
+}
+
+
+.main_formulario_contenido_input{
+    height: 30px;
+    border-radius: 10px;
+    border: #00ff00;
+    border-style: double;
+    background-color: transparent;
+    
+}
+
+.main_formulario_contenido_input:hover{
+    border: #c7570c;
+    background-color: aliceblue;
+}
+
+.main_formulario_contenido_label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #ff8800;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    
+}
+
+.main_formulario_contenido_p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #ff8800;
+    
+}
+
+.main_formulario_contenido_textarea{
+    height: 150px;
+    border-radius: 10px;
+    border: #00ff00;
+    border-style: double;
+    background-color: transparent;
+}
+
+.main_formulario_contenido_textarea:hover{
+    border: #c7570c;
+    background-color: aliceblue;
+}
+
+.main_formulario_contenido_boton{
+    width: 500px;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.main_formulario_contenido_boton_enviar{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: #00ff00;
+    border-style: double;
+    background-color: transparent;
+    color: #ff8800;
+    font-family: 'Georgia black', 'Times New Roman', Times, serif;
+}
+
+.main_formulario_contenido_boton_enviar:hover{
+    background-color: #00ff00;
+    color: rgb(10, 10, 10);
+}
+
+
+.main_formulario_contenido_boton_limpiar{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: #ff1100;
+    border-style: double;
+    background-color: transparent;
+    color: #ff8800;
+    font-family: 'Georgia black', 'Times New Roman', Times, serif;
+}
+
+.main_formulario_contenido_boton_limpiar:hover{
+    background-color: #ff1100;
+    color: aliceblue;
 }
 
 .footer-home{
