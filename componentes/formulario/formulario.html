@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../img/disco2.ico">
     <script src="https://kit.fontawesome.com/73dba2e5fe.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../formulario/formulario.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Formulario de Contacto</title>
 </head>
 <body class="body-home">
@@ -24,7 +24,7 @@
                 <hr>
                 <div>
                     <ul class="encabezado-section-ul">
-                        <li class="encabezado-section-ul-li"><a href="./../../index.html">Home</a></li>
+                        <li class="encabezado-section-ul-li"><a href="../../index.html">Home</a></li>
                         <li class="encabezado-section-ul-li"><a href="../producto/productos.html">Productos</a></li>
                         <li class="encabezado-section-ul-li"><a href="#">Contacto</a></li>
                         <li class="encabezado-section-ul-li"><a href="../carrito/carrito.html">Carrito</a></li>
@@ -48,11 +48,11 @@
 
         <h1 class="main_formulario_titulo">Formulario de Contacto Comprador o Vendedor</h1>
         
-        <form class="main_formulario_contenido" action="https://formspree.io/f/xpzvenjg" method="POST">
+        <form id="formulario" class="main_formulario_contenido" action="https://formspree.io/f/xpzvenjg" method="POST">
 
             <div class="main_formulario_contenido_div">
                 <label class="main_formulario_contenido_label" for="nombre">Nombre</label>
-                <input class="main_formulario_contenido_input" placeholder="   Escriba su NOMBRE" required type="text" name="nombre" id="nombre">
+                <input class="main_formulario_contenido_input" placeholder="   Escriba su NOMBRE"  type="text" name="nombre" id="nombre">
             </div>
                 
             <div class="main_formulario_contenido_div">
@@ -111,42 +111,47 @@
                 <textarea class="main_formulario_contenido_textarea" name="comentario" rows="3" cols="3" id="comentario" placeholder="  Escribe tu consulta"></textarea>
             </div>
 
+           <div class="mensaje_error">
+            <p id="mensajeError"></p>
+           </div>
+
             <div class="main_formulario_contenido_boton">
                 <input class="main_formulario_contenido_boton_enviar" type="submit" value="Enviar...">
                 <input class="main_formulario_contenido_boton_limpiar" type="reset" value="Limpiar...">
+                
             </div>
-                        
+                                    
         </form>
         
     </main>
     
     <footer class="footer-home">
-        <section class="footer-home-section">
+        <div class="footer-home-section">
             <div>
-                <h1>Sucursal CABA</h1>
-                <h2>Corrientes N° 2598</h2>
-                <h3>Te.: 1130256984</h3>
-                <h4>CABA - Argentina</h4>
+                <p>Sucursal CABA</p>
+                <p>Corrientes N° 2598</p>
+                <p>Te.: 1130256984</p>
+                <p>CABA - Argentina</p>
                 
             </div>
             <div>
-                <h1>Sucursal Berazategui</h1>
-                <h2>Cale 14 N° 1524</h2>
-                <h3>Te.: 1125987456</h3>
-                <h4>Berazategui - Argentina</h4>
+                <p>Sucursal Berazategui</p>
+                <p>Cale 14 N° 1524</p>
+                <p>Te.: 1125987456</p>
+                <p>Berazategui - Argentina</p>
                 
             </div>
             <div>
-                <h1>Sucursal Hurlingham</h1>
-                <h2>Poeta Rizo N° 2596</h2>
-                <h3>Tel.: 1132546897</h3>
-                <h4>Hurlingham - Argentina</h4>
+                <p>Sucursal Hurlingham</p>
+                <p>Poeta Rizo N° 2596</p>
+                <p>Tel.: 1132546897</p>
+                <p>Hurlingham - Argentina</p>
                 
             </div>
-        </section>
+        </div>
         
         <marquee behavior="" direction="">Grupo nombres año @Copiring</marquee>
     </footer>
-    
+    |<script src="../../js/validacion.js"></script>
 </body>
 </html>
